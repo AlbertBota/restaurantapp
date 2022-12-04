@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/RestaurantVerticalLinearLayout">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp">
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/african_1" />
+    </androidx.cardview.widget.CardView>
+
+    <Space
+        style="@style/RestaurantVerticalSpacer" >
+    </Space>
+
+    <TextView
+        android:id="@+id/name"
+        style="@style/RestaurantName"
+        android:text="Name"></TextView>
+
+    <Space
+        style="@style/RestaurantVerticalSpacer" >
+    </Space>
+
+    <LinearLayout
+        style="@style/RestaurantHorizontalLinearLayout">
+
+        <ImageView
+            style="@style/RestaurantImageIcon"
+            app:srcCompat="@drawable/icon_dine" />
+
+        <Space
+            style="@style/RestaurantHorizontalSpacer" >
+        </Space>
+
+        <TextView
+            android:id="@+id/type"
+            style="@style/RestaurantDetailsText"
+            android:text="Type"></TextView>
+
+    </LinearLayout>
+
+    <Space
+        style="@style/RestaurantVerticalSpacer" >
+    </Space>
+
+    <LinearLayout
+        style="@style/RestaurantHorizontalLinearLayout" >
+
+        <ImageView
+            style="@style/RestaurantImageIcon"
+            app:srcCompat="@drawable/icon_location" />
+
+        <Space
+            style="@style/RestaurantHorizontalSpacer" >
+        </Space>
+
+        <TextView
+            android:id="@+id/address"
+            style="@style/RestaurantDetailsText"
+            android:text="Address"></TextView>
+
+    </LinearLayout>
+
+</LinearLayout>
